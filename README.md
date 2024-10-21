@@ -12,7 +12,7 @@ This project demonstrates the process of recognizing emotions from facial expres
 6. [Training](#training)
 7. [Results](#results)
 8. [Usage](#usage)
-9. [Future Improvements](#future-improvements)
+
 
 ## Project Overview
 
@@ -25,17 +25,16 @@ We use the FER2013 dataset, which contains 48x48 pixel grayscale images of faces
 ## Setup and Installation
 
 1. Clone this repository
-2. Install the required packages:
-   ```
-   pip install -r requirements.txt
-   ```
-3. Download the FER2013 dataset from Kaggle and place it in the `fer2013` directory
-
+ ```
+git clone https://github.com/yassinebourkha/Emotion-Recognition.git
+ ```
+2. Launch the notebook
+ ```
+jupyter notebook Emotion_Recognition_from_Facial_Expressions.ipynb
+ ```
 ## Project Structure
 
 - `emotion_recognition.ipynb`: Main Jupyter notebook containing the entire project workflow
-- `requirements.txt`: List of required Python packages
-- `fer2013/`: Directory containing the FER2013 dataset
 - `EmotionRecognition.pth`: Saved model weights after training
 
 ## Model Architecture
@@ -81,10 +80,3 @@ To use the trained model for inference:
        _, predicted = torch.max(output, 1)
    ```
 
-## Future Improvements
-
-1. Experiment with other pre-trained models like ResNet or EfficientNet
-2. Implement more advanced data augmentation techniques
-3. Try different optimizers and learning rate schedules
-4. Collect or use additional datasets to improve model generalization
-5. Implement real-time emotion recognition using a webcam feed
